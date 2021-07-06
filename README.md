@@ -1,5 +1,5 @@
 # SCION-TV</br>
-***TV-Webstreaming over the SCION-Network***</br>
+***This project enables TV-Webstreaming over the SCION-Network***</br>
 
 file_Server.go -> file-server with content-header to access HTTP-Livestream</br>
 server.go -> server which serves website and its resources</br>
