@@ -2,7 +2,7 @@
 Serve is a very simple static file server in go
 Usage:
         -p="8899": port to serve on
-        -d="path/to/hls":    the directory of static files to host
+        -d="path/to/hls": the directory of static files to host
 Navigating to http://localhost:8899 will display the directory file listings.
 */
 package main
