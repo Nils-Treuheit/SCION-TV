@@ -1,3 +1,4 @@
+/*
 Serve is a very simple static file server in go
 Usage:
         -p="80": port to serve on
