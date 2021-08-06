@@ -1,3 +1,4 @@
+/*
 Serve is a very simple static file server in go
 Usage:
         -p="80": port to serve on
@@ -37,8 +38,8 @@ func main() {
         http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){http.ServeFile(w, r, website)})
         http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request){http.ServeFile(w, r, icon)})
         http.HandleFunc("/background.png", func(w http.ResponseWriter, r *http.Request){http.ServeFile(w, r, pic)})
-  
+
         log.Printf("Serving %s on HTTP port: %s\n", *websiteHandle, *port)
         log.Fatal(http.ListenAndServe(":"+*port, nil))
 }
-  
+

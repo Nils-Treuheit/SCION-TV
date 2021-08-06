@@ -12,6 +12,7 @@ import (
         "log"
         "net/http"
         "os"
+        "fmt"
 )
 
 func main() {
@@ -22,7 +23,7 @@ func main() {
          log.Println("Default to relative path...") }
         path, err := os.Getwd()
         if err != nil { log.Println(err) } else { dir = path+"/hls" }
-        
+
         port := flag.String("p", "8899", "port to serve on")
         directory := flag.String("d", dir, "the directory of static file to host")
         flag.Parse()
