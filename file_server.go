@@ -2,7 +2,7 @@
 Serve is a very simple static file server in go
 Usage:
         -p="8899": port to serve on
-        -d="path/to/hls": the directory of static files to host
+        -d="path/to/hls/folder": the directory of static files to host
 Navigating to http://localhost:8899 will display the directory file listings.
 */
 package main
@@ -22,7 +22,7 @@ func main() {
          fmt.Println("Warning! You did not provide the absolute path to the loacation of your hls folder.")
          log.Println("Default to relative path...") }
         path, err := os.Getwd()
-        if err != nil { log.Println(err) } else { dir = path+"/hls" }
+        if err != nil { log.Println(err) } else { dir = path }
 
         port := flag.String("p", "8899", "port to serve on")
         directory := flag.String("d", dir, "the directory of static file to host")
