@@ -21,11 +21,11 @@ Servers:</br>
 <i>[web_server.go](web_server.go)</i>    <strong>-></strong>  server which serves website and its resources</br>
 <i>proxy</i>                             <strong>-></strong>  this server is part of the required SCION environment install</br>
 
-There exists a peer in the SCION-network which is broadcasting video content. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the scion proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
+There exists a peer in the SCION-network which is broadcasting video content. In this specific case the video content is a TV-Signal. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the SCION proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
 
 ## Project-Requirements:</br>
-You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. 
-Your machine's setup has to include the required go version installation and a scion proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
+You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
+Your machine's setup also has to include the required go version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
 
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
