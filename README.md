@@ -19,7 +19,7 @@ Main Script:</br>
 Servers:</br>
 <i>[file_server.go](file_server.go)</i>  <strong>-></strong>  file-server with content-header to access HTTP-Livestream files</br>
 <i>[web_server.go](web_server.go)</i>    <strong>-></strong>  server which serves website and its resources</br>
-<i>proxy</i>                             <strong>-></strong>  this server is part of the required SCION environment install</br>
+<i>[proxy](https://github.com/netsec-ethz/scion-apps/tree/master/_examples/shttp/proxy)</i>  <strong>-></strong>  this server is part of the required SCION environment install</br>
 
 There exists a peer in the SCION-network which is broadcasting video content. In this specific case the video content is a TV-Signal. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the SCION proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
 
