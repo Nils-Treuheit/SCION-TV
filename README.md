@@ -14,7 +14,7 @@ Website:</br>
 <i>[index.html](html/index.html)</i> <strong>-></strong> website uses Video JS as a Javascript based Videoplayer to enable the consumption of HLS content</br>
 
 Main Script:</br>
-<i>[ffmpeg.sh](ffmpeg.sh)</i> <strong>-></strong> this script converts the video data stream into a true HLS.</br>
+<i>[ffmpeg_script.sh](ffmpeg_script.sh)</i> <strong>-></strong> this script converts the video data stream into a true HLS.</br>
 
 Servers:</br>
 <i>[file_server.go](file_server.go)</i>  <strong>-></strong>  file-server with content-header to access HTTP-Livestream files</br>
