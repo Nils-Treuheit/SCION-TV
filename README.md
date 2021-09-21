@@ -25,7 +25,7 @@ There exists a peer in the SCION-network which is broadcasting video content. Th
 
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. 
-Your machine's setup has to include the required go version installation and a scion proxy install from the SCION-Apps Repository</br>
+Your machine's setup has to include the required go version installation and a scion proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
 
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
