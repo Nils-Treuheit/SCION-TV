@@ -17,15 +17,20 @@ Main Script:</br>
 <i>[ffmpeg_script.sh](ffmpeg_script.sh)</i> <strong>-></strong> this script converts the video data stream into a true HLS.</br>
 
 Servers:</br>
-<i>[file_server.go](file_server.go)</i>  <strong>-></strong>  file-server with content-header to access HTTP-Livestream files</br>
-<i>[web_server.go](web_server.go)</i>    <strong>-></strong>  server which serves website and its resources</br>
-<i>[proxy](https://github.com/netsec-ethz/scion-apps/tree/master/_examples/shttp/proxy)</i>  <strong>-></strong>  this server is part of the required SCION environment install</br>
+<i>[file_server.go](file_server.go)</i>  <strong>-></strong>  file-server with content-header to access HTTP-Livestream files; runs with default setup on port 8899</br>
+<i>[web_server.go](web_server.go)</i>    <strong>-></strong>  server which serves website and its resources; runs with default setup on port 80</br>
+<i>[proxy](https://github.com/netsec-ethz/scion-apps/tree/master/_examples/shttp/proxy)</i>  <strong>-></strong>  this server is part of the required SCION environment install; runs with recommended setup on port 8890</br>
 
 There exists a peer in the SCION-network which is broadcasting video content. In this specific case the video content is a TV-Signal. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the SCION proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
 
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
 Your machine's setup also has to include the required [GO](https://en.wikipedia.org/wiki/Go_(programming_language)) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
+
+## Recommended Script-Setup:</br>
+startWebServer.sh: sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]
+startFileServer.sh: sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]
+startProxyServer.sh: sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"
 
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
