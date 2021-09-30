@@ -28,9 +28,9 @@ You will need a machine that runs Linux, is connected to the Internet and was co
 Your machine's setup also has to include the required [GO](https://en.wikipedia.org/wiki/Go_(programming_language)) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
 
 ## Recommended Script-Setup:</br>
-startWebServer.sh: sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]
-startFileServer.sh: sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]
-startProxyServer.sh: sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"
+<i>startWebServer.sh:</i> sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]</br>
+<i>startFileServer.sh:</i> sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]</br>
+<i>startProxyServer.sh:</i> sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"</br>
 
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
