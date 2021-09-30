@@ -31,7 +31,8 @@ Your machine's setup also has to include the required [GO](https://en.wikipedia.
 <i>startFileServer.sh </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]</pre>
 <i>startWebServer.sh  </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]</pre>
 <i>startProxyServer.sh</i><pre>sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"</pre>
-<b></b>
+All of this scripts should be run automatically by crontab or a similar sheduling tool shortly after each other.</br>
+Start up the proxy server first then start the file and web server afterwards since the later depend on the proxy server.</br>
 
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
