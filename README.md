@@ -5,7 +5,7 @@
 ## Project-Overview:</br>
 
 Folders:</br>
-<i>[mov](mov) &nbsp; &nbsp; &nbsp;   </i>  <strong>-></strong>  contains sample movie files and a ffmpeg script to create corresponding HLS files         </br> 
+<i>[mov](mov) &nbsp; &nbsp; &nbsp;   </i>  <strong>-></strong>  contains sample movie files and a [ffmpeg](https://ffmpeg.org/ffmpeg-formats.html#hls-2) script to create corresponding HLS files         </br> 
 <i>[hls_mov](hls_mov)</i>  <strong>-></strong>  contains playlist file and HLS video segments corresponding to a static movie file in mov </br>
 <i>[hls](hls) &nbsp; &nbsp; &nbsp; &nbsp;    </i>  <strong>-></strong>  contains playlist file and HLS video segments corresponding to the main ffmpeg script     </br>
 <i>[html](html) &nbsp; &nbsp;&nbsp;   </i>  <strong>-></strong>  contains website and its resources</br>
