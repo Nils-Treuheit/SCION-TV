@@ -18,8 +18,8 @@ Main Script:</br>
 <i>[ffmpeg_script](ffmpeg_script)</i>  <strong>-></strong>  this folder contains different scripts that can convert the video data stream into a true HLS. </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
-</br>
-The idea behind this setup is to provide 3 basic levels of encoding performance through these scripts. You can choose your base script depending on your machines performance and then tweak it to fit even better to your machine's transcoding power. The naming hints on the needed system performance => ultrafast & realtime scripts are the least demanding, veryslow & best are the most demanding. </br>
+
+The idea behind this setup is to provide 3 basic levels of encoding performance through these scripts. You can choose the base script depending on your machines performance and then tweak it to fit even better to your machine's transcoding power. The naming hints on the needed system performance => ultrafast & realtime scripts are the least demanding, veryslow & best are the most demanding. </br></br>
 
 
 Servers:</br>
