@@ -19,7 +19,7 @@ Main Script:</br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
 
-The idea behind this setup is to provide 3 basic levels of encoding performance through these scripts. You can choose the base script depending on your machines performance and then tweak it to fit even better to your machine's transcoding power. The naming hints on the needed system performance => ultrafast & realtime scripts are the least demanding, veryslow & best are the most demanding. </br></br>
+There are scripts ready for encoding with the following standards: avc, [hevc](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding), [vp9](https://en.wikipedia.org/wiki/VP9) and [av1](https://en.wikipedia.org/wiki/AV1). The idea behind this setup is to provide 3 basic levels of encoding performance through these scripts. You can choose the base script depending on your machines performance and then tweak it to fit even better to your machine's transcoding power. The naming hints on the needed system performance => ultrafast & realtime scripts are the least demanding, veryslow & best are the most demanding. </br></br>
 
 
 Servers:</br>
