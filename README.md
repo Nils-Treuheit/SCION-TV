@@ -16,11 +16,11 @@ Website:</br>
 Main Script:</br>
 <i>[ffmpeg_ultrafast_avc.sh](ffmpeg_script/avc/ffmpeg_ultrafast_avc.sh)</i>  <strong>-></strong>  mainly used script in the project that converts the video data stream into a true HLS. </br>
 <i>[ffmpeg_script](ffmpeg_script)</i>  <strong>-></strong>  this folder contains different scripts that can convert the video data stream into a true HLS. </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> the idea is to have 3 basic levels of encoding performance</br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> depending on your machine you choose the script and tweak it </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> ultrafast & realtime = least demanding; veryslow & best = most demanding </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> the idea is to have 3 basic levels of encoding performance</br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> depending on your machine you choose the script and tweak it </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> ultrafast & realtime = least demanding; veryslow & best = most demanding </br>
 
 
 Servers:</br>
