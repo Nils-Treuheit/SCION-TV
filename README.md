@@ -49,4 +49,4 @@ The Website was created using [this guide](https://videojs.com/getting-started/)
 At the moment Video JS sadly only properly supports one of our encoding formats, which is [advanced video coding(avc)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or better known as H.264. An overview of supported encoding and stream formats can be found [here](https://github.com/videojs/http-streaming/blob/main/docs/supported-features.md).</br>
 
 ## Future Upgrade:</br>
-Use [Google's Shakaplayer](https://opensource.google/projects/shaka-player) insetead of Video JS. This requires an [extensive setup](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html) of an additional server infrastructure.    
+Use [Google's Shakaplayer](https://opensource.google/projects/shaka-player) insetead of Video JS. The player from Google should support more encoding formats and should be more efficent since it is a local setup. However, this player requires an [extensive setup](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html) of an additional server infrastructure.    
