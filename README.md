@@ -44,6 +44,6 @@ All of this scripts should be run automatically by crontab or a similar shedulin
 Start up the proxy server first then start the file and web server afterwards since the later depend on the proxy server.</br>
 
 ## Used Rescources:</br>
-The Website uses a picture creation made from these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/),[Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)
+The Website uses a picture creation made from these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
 The Website was created using [this guide](https://videojs.com/getting-started/) from Video JS as a baseline.</br>
 At the moment Video JS sadly only properly supports one of our encoding formats, which is [advanced video coding(avc)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or better known as H.264. An overview of supported encoding and stream formats can be found [here](https://github.com/videojs/http-streaming/blob/main/docs/supported-features.md).
