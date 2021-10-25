@@ -27,7 +27,7 @@ Servers:</br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;&nbsp;</i>  <strong>-></strong> runs with default setup on port 8899 </br>
 <i>[web_server.go](web_server.go)&nbsp; </i>  <strong>-></strong> server which serves website and its resources </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;&nbsp;</i>  <strong>-></strong> runs with default setup on port 80                     
-<i>[proxy](https://github.com/netsec-ethz/scion-apps/tree/master/_examples/shttp/proxy) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</i>  <strong>-></strong>  this server is part of the required SCION environment install</br>
+<i>[proxy](https://github.com/netsec-ethz/scion-apps/tree/master/_examples/shttp/proxy) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</i>  <strong>-></strong>  this server is part of the required [SCION](https://scion-architecture.net) environment install</br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;&nbsp;</i>  <strong>-></strong> runs with recommended setup on port 8890 </br>
 
 There exists a peer in the SCION-network which is broadcasting video content. In this specific case the video content is a TV-Signal. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the SCION proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
