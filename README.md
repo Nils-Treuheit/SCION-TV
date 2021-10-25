@@ -14,13 +14,13 @@ Website:</br>
 <i>[index.html](html/index.html)</i>  <strong>-></strong>  website uses Video JS as a Javascript based Videoplayer to enable the consumption of HLS content </br>
 
 Main Script:</br>
-<i>[ffmpeg_ultrafast_avc.sh](ffmpeg_script/avc/ffmpeg_ultrafast_avc.sh)</i>  <strong>-></strong>  this scripts converts the video data stream into a true HLS. </br>
-<i>[ffmpeg_script](ffmpeg_script)</i>  <strong>-></strong>  this folder contains scripts that can convert the video data stream into a true HLS. </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;</i>  <strong>-></strong> the idea is to have 3 basic levels of encoding performance</br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;</i>  <strong>-></strong> depending on your machine you choose the script and tweak it </br>
-<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;   &nbsp;</i>  <strong>-></strong> ultrafast & realtime = least demanding; veryslow & best = most demanding </br>
+<i>[ffmpeg_ultrafast_avc.sh](ffmpeg_script/avc/ffmpeg_ultrafast_avc.sh)</i>  <strong>-></strong>  mainly used script in the project that converts the video data stream into a true HLS. </br>
+<i>[ffmpeg_script](ffmpeg_script)</i>  <strong>-></strong>  this folder contains different scripts that can convert the video data stream into a true HLS. </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> the idea is to have 3 basic levels of encoding performance</br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> depending on your machine you choose the script and tweak it </br>
+<i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;   &nbsp;  &nbsp;</i>  <strong>-></strong> ultrafast & realtime = least demanding; veryslow & best = most demanding </br>
 
 
 Servers:</br>
@@ -47,3 +47,4 @@ Start up the proxy server first then start the file and web server afterwards si
 ## Used Rescources:</br>
 The Website was created using this guide as a baseline:</br>
 https://videojs.com/getting-started/
+Video JS sadly only supports one of our encoding formats, which is [advanced video coding(avc)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or better known as H.264. An overview of supported encoding and stream formats can be found [here](https://github.com/videojs/http-streaming/blob/main/docs/supported-features.md).
