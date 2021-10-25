@@ -34,7 +34,7 @@ There exists a peer in the SCION-network which is broadcasting video content. In
 
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
-Your machine's setup also has to include the required [GO](https://en.wikipedia.org/wiki/Go_(programming_language)) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps)</br>
+Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps).</br>
 
 ## Recommended Script-Setup:</br>
 <i>startFileServer.sh </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]</pre>
