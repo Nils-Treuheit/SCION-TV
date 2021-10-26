@@ -40,8 +40,11 @@ Your machine's setup also has to include the required [GO](https://golang.org/dl
 <i>startFileServer.sh </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]</pre>
 <i>startWebServer.sh  </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]</pre>
 <i>startProxyServer.sh</i><pre>sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"</pre>
-All of this scripts should be run automatically by crontab or a similar sheduling tool shortly after each other.</br>
-Start up the proxy server first then start the file and web server afterwards since the later depend on the proxy server.</br>
+</br>All of this scripts should be run automatically simultaneously with a script like this:</br></br>
+<i>startServers.sh</i><pre>trap 'kill $BPID1; kill $BPID2;exit' EXIT
+sudo ./startWebServer.sh & BPID1=$! sudo ./startFileServer.sh & BPID2=$! sudo ./startProxy.sh</pre>
+Feel free to run that script shortly after the start-up by crontab or a similar sheduling tool.</br>
+Just make sure that the Servers are started before the ffmpeg script, because of the dependency.</br>
 
 ## Used Rescources:</br>
 The Website uses a picture creation made from these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
