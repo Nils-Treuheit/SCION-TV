@@ -10,12 +10,16 @@ Folders:</br>
 <i>[hls](hls) &nbsp; &nbsp; &nbsp; &nbsp;    </i>  <strong>-></strong>  contains playlist file and HLS video segments corresponding to the main ffmpeg script     </br>
 <i>[html](html) &nbsp; &nbsp;&nbsp;   </i>  <strong>-></strong>  contains website and its resources</br>
 
+Helper Scripts:</br>
+<i>[remove_old_segments.py](remove_old_segments.py)   </i>  <strong>-></strong> time based maintainace script to remove segment files that will not be used anymore </br>
+<i>[webpage_generator.py](webpage_generator.py) &nbsp; &nbsp;   </i>  <strong>-></strong> build script to modify the website file according to network setup </br>
+
 Website:</br>
 <i>[index.html](html/index.html)</i>  <strong>-></strong>  website uses [Video JS](https://videojs.com/) as a Javascript based Videoplayer to enable the consumption of HLS content </br>
 
 Main Script:</br>
-<i>[ffmpeg_ultrafast_avc.sh](ffmpeg_script/avc/ffmpeg_ultrafast_avc.sh)</i>  <strong>-></strong>  mainly used script in the project that converts the video data stream into a true HLS. </br>
-<i>[ffmpeg_script](ffmpeg_script)</i>  <strong>-></strong>  this folder contains different scripts that can convert the video data stream into a true HLS. </br>
+<i>[ffmpeg_ultrafast_avc.sh](ffmpeg_scripts/avc/ffmpeg_ultrafast_avc.sh)</i>  <strong>-></strong>  mainly used script in the project that converts the video data stream into a true HLS. </br>
+<i>[ffmpeg_scripts](ffmpeg_scripts)</i>  <strong>-></strong>  this folder contains different scripts that can convert the video data stream into a true HLS. </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> the folder is split into subfolders that hold scripts for the respective encoding formats </br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;  &nbsp;  &nbsp;</i>  <strong>-></strong> each subfolder holds 3 scripts </br>
 
@@ -36,7 +40,7 @@ There exists a peer in the SCION-network which is broadcasting video content. In
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
 Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps).</br>
 
-## Recommended Script-Setup:</br>
+## Recommended Start-Up Script Setup:</br>
 <i>startFileServer.sh </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> file_server.go\] \[PATH_to -> hls\]</pre>
 <i>startWebServer.sh  </i><pre>sudo \[PATH_to -> GO\] run \[PATH_to -> web_server.go\] \[PATH_to -> html\]</pre>
 <i>startProxyServer.sh</i><pre>sudo \[PATH_to -> proxy\] --remote="\[SCION-IP of Broadcast\]" --local="\[0.0.0.0:8890 or Device_LAN-IP:8890\]"</pre>
