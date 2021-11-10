@@ -3,8 +3,8 @@ package main
 /*
 This program starts a Webpage-Server, a File-Server with a header to support hosting of streaming content and a SCION-IP proxy
 Usage:
-        -webServPort="80": port to serve webpage on [default = 80]
-        -webDir="/path/to/website-dir": website directory that contains index.html file and other elements to host [on port 80]
+        -webServPort="8080": port to serve webpage on [default = 8080]
+        -webDir="/path/to/website-dir": website directory that contains index.html file and other elements to host [on port 8080]
         -fileServPort="8899": port to serve streaming files on [default = 8899]
         -fileDir="path/to/hls-folder": the directory of streaming files to host [on port 8899]
 		-local="0.0.0.0:8890": specify IP-address and port the proxy should listen to
@@ -27,7 +27,7 @@ func main() {
 
 	local := flag.String("local", "0.0.0.0:8890", "The local HTTP or SCION address on which the server will be listening")
 	remote := flag.String("remote", "19-ffaa:1:bcc,[127.0.0.1]:9001", "The SCION or HTTP address on which the server will be requested")
-	webServPort := flag.String("webServPort", "80", "The port to serve website on")
+	webServPort := flag.String("webServPort", "8080", "The port to serve website on")
 	webDir := flag.String("webDir", "html", "The directory of static webpage elements to host")
 	fileServPort := flag.String("fileServPort", "8899", "The port to serve website on")
 	fileDir := flag.String("fileDir", "hls", "The directory of streaming content to host")
@@ -88,7 +88,7 @@ func proxy(local *string, remote *string) {
 
 /*
 This is a very simple webpage server in go
-Navigating to http://localhost:80 will display the index.html.
+Navigating to http://localhost:8080 will display the index.html.
 */
 func web_server(webDir *string, port *string) {
 	webpage := "index.html"
