@@ -1,0 +1,62 @@
+total 153
+drwxrwxrwx 1 vagrant vagrant 49152 Nov 14 21:29 .
+drwxrwxrwx 1 vagrant vagrant  4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant    26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant  1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant   131 Nov 14 21:29 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 94713 Nov 14 21:29 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant     0 Nov 14 21:29 segment_1.m4s
+total 369
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:31 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    163 Nov 14 21:31 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant  94713 Nov 14 21:29 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 217836 Nov 14 21:31 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant      0 Nov 14 21:31 segment_2.m4s
+total 589
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:32 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    195 Nov 14 21:32 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant  94713 Nov 14 21:29 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 217836 Nov 14 21:31 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 224106 Nov 14 21:32 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant      0 Nov 14 21:32 segment_3.m4s
+total 589
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:32 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    195 Nov 14 21:32 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant  94713 Nov 14 21:29 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 217836 Nov 14 21:31 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 224106 Nov 14 21:32 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant      0 Nov 14 21:32 segment_3.m4s
+total 493
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:34 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    195 Nov 14 21:32 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 217836 Nov 14 21:31 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 224106 Nov 14 21:32 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant      0 Nov 14 21:32 segment_3.m4s
+total 277
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:36 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    195 Nov 14 21:32 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 224106 Nov 14 21:32 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant      0 Nov 14 21:32 segment_3.m4s
+total 729
+drwxrwxrwx 1 vagrant vagrant  49152 Nov 14 21:39 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 14 21:00 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 14:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1246 Nov 14 21:29 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    259 Nov 14 21:39 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 607201 Nov 14 21:38 segment_3.m4s
+-rwxrwxrwx 1 vagrant vagrant  75022 Nov 14 21:39 segment_4.m4s

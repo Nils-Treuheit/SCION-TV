@@ -1,4 +1,4 @@
-cd ..
+cd ../..
 rm -rf hls/*.m3u8
 rm -rf hls/*.mp4
 rm -rf hls/*.m4s
