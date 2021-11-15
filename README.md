@@ -47,12 +47,8 @@ The setup includes the following components:</br>
 <i>  &nbsp;  &nbsp;  &nbsp;  &ensp;  &nbsp;  &nbsp;  &ensp;  &ensp;</i>  <strong>-></strong> runs with recommended setup on port 8890 </br>
 
 There exists a peer in the SCION-network which is broadcasting video content. In this specific case the video content is a TV-Signal. The video stream can be received through the SCION network. In order to watch the stream you need to be connected to the stream with the SCION proxy. The proxy will make the SCION-network content accessible to your own network or machine. This project uses ffmpeg to convert the data stream into a modern and easily accessible video streaming format and than re-distributes the content via the web and file servers in the LAN or on your own machine.  
-</br></br>
-
-## Project-Requirements:</br>
-You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
-Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and SCION proxy install from the [SCION-Apps Repository](https://github.com/netsec-ethz/scion-apps).</br>
 </br>
+
 
 ## Recommended Script Setup:</br>
 <i>startServerSetup.sh </i><pre>\[PATH_to -> GO\] run \[PATH_to -> server.go\]</pre>
@@ -63,6 +59,11 @@ You can run the server.go program with your own values for all its parameters.</
 This is how the command would look like with all optional paramters:
 <pre>[PATH_to -> GO] run [PATH_to -> server.go] --webServPort="[PORT of Webpage]" --webDir="[Directory of HTML-File]" --fileServPort="[PORT of File Server]" --fileDir="[Directory of HLS content]" --remote="[SCION-IP of Broadcast]" --local="[0.0.0.0:8890 or Device_LAN-IP:8890]"</pre>
 Besides the server.go program you should simultaneously run the remove_old_segments.py and a ffmpeg script that transcodes the MuMuDVB-Stream to a HTTP-Livestream.  
+</br>
+
+## Project-Requirements:</br>
+You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
+Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and [SCION apps](https://github.com/netsec-ethz/scion-apps) installation.</br>
 </br>
 
 ## Used Rescources:</br>
