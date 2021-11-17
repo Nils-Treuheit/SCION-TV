@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ../../
 rm -rf hls/*.m3u8
 rm -rf hls/*.mp4
