@@ -51,20 +51,45 @@ There exists a peer in the SCION-network which is broadcasting video content. In
 
 
 ## Recommended Script Setup:</br>
-<i>startServerSetup.sh </i><pre>\[PATH_to -> GO\] run \[PATH_to -> server.go\]</pre>
+<i>startServerSetup.sh </i>
+```shell-script 
+[PATH_to -> GO] run [PATH_to -> server.go]
+```
 This script will execute the server.go program with default values for all its parameters.</br>
 Feel free to run that script shortly after the start-up by crontab or a similar sheduling tool.</br>
 Just make sure that the Servers are started before the ffmpeg script, because of the dependency.</br>
 You can run the server.go program with your own values for all its parameters.</br>
 This is how the command would look like with all optional paramters:
-<pre>[PATH_to -> GO] run [PATH_to -> server.go] --webServPort="[PORT of Webpage]" --webDir="[Directory of HTML-File]" --fileServPort="[PORT of File Server]" --fileDir="[Directory of HLS content]" --remote="[SCION-IP of Broadcast]" --local="[0.0.0.0:8890 or Device_LAN-IP:8890]"</pre>
+```shell
+[PATH_to -> GO] run [PATH_to -> server.go] --webServPort="[PORT of Webpage]" --webDir="[Directory of HTML-File]" \
+                                           --fileServPort="[PORT of File Server]" --fileDir="[Directory of HLS content]" \
+                                           --remote="[SCION-IP of Broadcast]" --local="[0.0.0.0:8890 or Device_LAN-IP:8890]"
+```
 Besides the server.go program you should simultaneously run the remove_old_segments.py and a ffmpeg script that transcodes the MuMuDVB-Stream to a HTTP-Livestream.  
 </br>
 
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
-Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and [SCION apps](https://github.com/netsec-ethz/scion-apps) installation.</br>
-</br>
+Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and [SCION apps](https://github.com/netsec-ethz/scion-apps) installation. Please refer to the installation guide of the SCION apps repository.</br>
+If you want to follow my exact setup you will need to install VirtualBox, Vagrant and get the Vagrantfile from your SCION-AS configuartion. You definitely have to add some lines to your Vagrantfile regarding port forwarding. If you choose to use the default configuration you need to add these lines in the Vagrantfile:
+<pre>config.vm.network "forwarded_port", guest: 8080, host: 80, protocol: "tcp"
+config.vm.network "forwarded_port", guest: 8890, host: 8890, protocol: "tcp"
+config.vm.network "forwarded_port", guest: 8899, host: 8899, protocol: "tcp"</pre>
+In my setup I used a Ubuntu Bionic(18.04) 64-bit VM with the following SCION apps installation:
+```shell
+sudo apt-get install apt-transport-https
+echo "deb [trusted=yes] https://packages.netsec.inf.ethz.ch/debian all main" | sudo tee /etc/apt/sources.list.d/scionlab.list
+sudo apt-get update
+sudo apt install scion-apps-*
+```
+and the following Go(version 1.16) installation:
+```shell
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-1.16
+```
+If you mirrored my setup you will find your go application under <code>/usr/lib/go-1.16/bin</code>
+</br></br>
 
 ## Used Rescources:</br>
 The Website uses a picture creation made from these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
