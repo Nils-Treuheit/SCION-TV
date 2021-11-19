@@ -71,7 +71,7 @@ Besides the server.go program you should simultaneously run the remove_old_segme
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
 Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and [SCION apps](https://github.com/netsec-ethz/scion-apps) installation. Please refer to the installation guide of the SCION apps repository.</br>
-If you want to follow my exact setup you will need to install VirtualBox, Vagrant and get the Vagrantfile from your SCION-AS configuartion. You definitely have to add some lines to your Vagrantfile regarding port forwarding. If you choose to use the default configuration you need to add these lines in the Vagrantfile:
+If you want to follow my exact setup you will need to install [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Vagrant](https://www.vagrantup.com/downloads) and get the Vagrantfile from your SCION-AS configuartion. You definitely have to add some lines to your Vagrantfile regarding port forwarding. If you choose to use the default configuration you need to add these lines in the Vagrantfile:
 <pre>config.vm.network "forwarded_port", guest: 8080, host: 80, protocol: "tcp"
 config.vm.network "forwarded_port", guest: 8890, host: 8890, protocol: "tcp"
 config.vm.network "forwarded_port", guest: 8899, host: 8899, protocol: "tcp"</pre>
