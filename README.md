@@ -71,11 +71,12 @@ Besides the server.go program you should simultaneously run the remove_old_segme
 ## Project-Requirements:</br>
 You will need a machine that runs Linux, is connected to the Internet and was configured to be a SCION-AS. [Here](https://www.scionlab.org/) you can learn more about SCION, the team behind it and how to become part of the network.</br>
 Your machine's setup also has to include the required [GO](https://golang.org/dl/#go1.16) version installation and [SCION apps](https://github.com/netsec-ethz/scion-apps) installation. Please refer to the installation guide of the SCION apps repository.</br>
+You also need to install [ffmpeg](https://ffmpeg.org/download.html) from the package manager.</br>
 If you want to follow my exact setup you will need to install [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Vagrant](https://www.vagrantup.com/downloads) and get the Vagrantfile from your SCION-AS configuartion. You definitely have to add some lines to your Vagrantfile regarding port forwarding. If you choose to use the default configuration you need to add these lines in the Vagrantfile:
 <pre>config.vm.network "forwarded_port", guest: 8080, host: 80, protocol: "tcp"
 config.vm.network "forwarded_port", guest: 8890, host: 8890, protocol: "tcp"
 config.vm.network "forwarded_port", guest: 8899, host: 8899, protocol: "tcp"</pre>
-In my setup I used a Ubuntu Bionic(18.04) 64-bit VM with the following SCION apps installation:
+In my setup I used a Ubuntu Bionic(18.04) 64-bit VM with ffmpeg version 3.4.8-0ubuntu0.2 and the following SCION apps installation:
 ```shell
 sudo apt-get install apt-transport-https
 echo "deb [trusted=yes] https://packages.netsec.inf.ethz.ch/debian all main" | sudo tee /etc/apt/sources.list.d/scionlab.list
