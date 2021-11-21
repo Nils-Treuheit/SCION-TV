@@ -20,7 +20,8 @@ if len(sys.argv)>1:
     median = sizes[int(len(sizes)/2)]
     if(type(len(sizes)/2)==float): median = (sizes[int(len(sizes)/2-0.5)]+sizes[int(len(sizes)/2+0.5)])/2
     avg_size = sum(sizes)/len(sizes)
-    x = [*range(segments[0],segments[-1],20),segments[-1]]
+    sortedSegments = sorted(segments)
+    x = [*range(sortedSegments[0],sortedSegments[-1],20),sortedSegments[-1]]
     y1 = [avg_size for _ in x]
     y2 = [median for _ in x]
 

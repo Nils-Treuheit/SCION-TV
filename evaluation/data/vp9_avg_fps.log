@@ -1,1 +1,1 @@
-realtime_rec 50fps - unstable transcoding(consistent error wave) <= broke down after wave; not propperly multi threaded
+realtime_rec 51fps - relatively stable transcoding(slightly decreasing fps rate from 53 to 50)
