@@ -1,1 +1,2 @@
-ultrafast_rec 40fps - unstable transcoding(consistent error wave) <= broke down after wave 
+ultrafast_rec 50fps - relatively stable transcoding(slightly decreasing fps rate from 54 to 49) more flucent than other encoding methods
+ultrafast_lole_error 41fps - relatively stable but consistent error wave lead to failed transcoding (increasing fps 37 to 45) 
