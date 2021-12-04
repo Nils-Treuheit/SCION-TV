@@ -20,6 +20,9 @@ if len(sys.argv)>1:
     median = sizes[int(len(sizes)/2)]
     if(type(len(sizes)/2)==float): median = (sizes[int(len(sizes)/2-0.5)]+sizes[int(len(sizes)/2+0.5)])/2
     avg_size = sum(sizes)/len(sizes)
+    print("AVG: "+str(avg_size))
+    print("Median: "+str(median))
+
     sortedSegments = sorted(segments)
     x = [*range(sortedSegments[0],sortedSegments[-1],20),sortedSegments[-1]]
     y1 = [avg_size for _ in x]
@@ -27,7 +30,7 @@ if len(sys.argv)>1:
 
     plt.scatter(segments,sizes)
     plt.plot(x,y1,"-r")
-    plt.plot(x,y1,"--g")
+    plt.plot(x,y2,"--g")
     plt.legend(["segments", "avg segment size", "median segment size"])
     plt.xlabel("segment numbers")
     plt.xticks()
