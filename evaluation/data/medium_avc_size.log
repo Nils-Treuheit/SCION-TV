@@ -1,0 +1,11 @@
+total 23133
+drwxrwxrwx 1 vagrant vagrant   40960 Dec  5 20:53 .
+drwxrwxrwx 1 vagrant vagrant    4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant      26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant    1268 Dec  5 20:52 init.mp4
+-rwxrwxrwx 1 vagrant vagrant     259 Dec  5 20:53 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 4566704 Dec  5 20:52 segment_0.mp4
+-rwxrwxrwx 1 vagrant vagrant 5316493 Dec  5 20:52 segment_1.mp4
+-rwxrwxrwx 1 vagrant vagrant 6084069 Dec  5 20:52 segment_2.mp4
+-rwxrwxrwx 1 vagrant vagrant 5997937 Dec  5 20:52 segment_3.mp4
+-rwxrwxrwx 1 vagrant vagrant 1665405 Dec  5 20:53 segment_4.mp4
