@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mlpat
 from mpl_toolkits.mplot3d import Axes3D
 
-files = glob("data/avg_*.gen_log")
+files = glob("first_run_data/avg_*.gen_log")
 
 keys,active_loads,loads,perfs,sizes = ([],[],[],[],[])
 for filename in files:
@@ -42,6 +42,7 @@ for idx in range(len(keys)):
     x1 = np.zeros(len(size_ticks))+loads[idx]
     x2 = np.zeros(len(size_ticks))+active_loads[idx]
     y = np.zeros(len(load_ticks))+sizes[idx]
+    plt.scatter(active_loads[idx],sizes[idx],c=colors[idx])
     plt.plot(x1,size_ticks,"-",color=colors[idx])
     plt.plot(x2,size_ticks,"--",color=colors[idx])
     plt.plot(load_ticks,y,"-",color=colors[idx])
@@ -60,6 +61,7 @@ for idx in range(len(keys)):
     x1 = np.zeros(len(perf_ticks))+loads[idx]
     x2 = np.zeros(len(perf_ticks))+active_loads[idx]
     y = np.zeros(len(load_ticks))+perfs[idx]
+    plt.scatter(active_loads[idx],perfs[idx],c=colors[idx])
     plt.plot(x1,perf_ticks,"-",color=colors[idx])
     plt.plot(x2,perf_ticks,"--",color=colors[idx])
     plt.plot(load_ticks,y,"-",color=colors[idx])
@@ -77,6 +79,7 @@ plt.scatter(avg_perf,avg_size,c='k',alpha=0.2)
 for idx in range(len(keys)):
     x = np.zeros(len(size_ticks))+perfs[idx]
     y = np.zeros(len(perf_ticks))+sizes[idx]
+    plt.scatter(perfs[idx],sizes[idx],c=colors[idx])
     plt.plot(x,size_ticks,"-",color=colors[idx])
     plt.plot(perf_ticks,y,"-",color=colors[idx])
     patch = mlpat.Patch(color=colors[idx], label=keys[idx])

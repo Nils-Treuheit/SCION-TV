@@ -4,4 +4,4 @@ rm -rf hls/*.m3u8
 rm -rf hls/*.mp4
 rm -rf hls/*.m4s
 cd hls
-ffmpeg -i http://127.0.0.1:8890/bysid/772 -sn -c:v libvpx-vp9 -crf 33 -quality realtime -speed 7 -tile-columns 2 -frame-parallel 1 -threads 4 -static-thresh 0 -row-mt 1 -error-resilient 1 -c:a:0 aac -b:a:0 96k -ac 2 -f hls -hls_time 6 -hls_list_size 15 -hls_flags delete_segments -hls_flags omit_endlist -hls_segment_type fmp4 -hls_fmp4_init_filename "init.mp4" -hls_segment_filename "segment_%d.m4s" "playlist.m3u8"
+ffmpeg -i http://127.0.0.1:8890/bysid/772 -sn -c:v libvpx-vp9 -quality realtime -speed 7 -tile-columns 2 -frame-parallel 1 -threads 4 -static-thresh 0 -row-mt 1 -error-resilient 1 -c:a:0 aac -b:a:0 96k -ac 2 -f hls -hls_time 6 -hls_list_size 15 -hls_flags delete_segments -hls_flags omit_endlist -hls_segment_type fmp4 -hls_fmp4_init_filename "init.mp4" -hls_segment_filename "segment_%d.m4s" "playlist.m3u8"
