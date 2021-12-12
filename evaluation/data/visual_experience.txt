@@ -1,0 +1,12 @@
+watch stream with VLC Player
+compare to original mumudvb stream
+
+vp9 looseless - slightly worse, visible difference, not as sharp, studders, stream started and ended in fragments, not realtime nor stable
+vp9 realtime - poor quality, visible difference, even less sharpe, color issues, more stable
+avc looseless - not watchable 
+avc ultrafast - nearly indistinguishable from original stream, sometimes tiny bit less sharp, very stable
+avc medium - nearly indistinguishable from avc ultrafast, stream started and ended in fragments, not realtime nor stable
+avc verslow - slightly worse, visible difference, better than vp9 looseless, stream started and ended in fragments, not realtime nor stable
+hevc looseless - 
+hevc ultrafast - 
+  

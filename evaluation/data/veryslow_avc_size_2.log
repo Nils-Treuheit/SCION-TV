@@ -1,0 +1,16 @@
+total 49
+drwxrwxrwx 1 vagrant vagrant 40960 Dec  7 16:03 .
+drwxrwxrwx 1 vagrant vagrant  4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant    26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant  1269 Dec  7 16:03 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    73 Dec  7 16:03 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant     0 Dec  7 16:03 segment_0.mp4
+total 11677
+drwxrwxrwx 1 vagrant vagrant   40960 Dec  7 16:05 .
+drwxrwxrwx 1 vagrant vagrant    4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant      26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant    1269 Dec  7 16:03 init.mp4
+-rwxrwxrwx 1 vagrant vagrant     163 Dec  7 16:05 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 6184123 Dec  7 16:04 segment_0.mp4
+-rwxrwxrwx 1 vagrant vagrant 5721910 Dec  7 16:05 segment_1.mp4
+-rwxrwxrwx 1 vagrant vagrant       0 Dec  7 16:05 segment_2.mp4

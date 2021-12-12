@@ -1,2 +1,3 @@
-realtime_rec 54fps
-realtime_lole 
+realtime_rec 48fps (egress proxy broke after 100 segments)
+error_realtime_rec 50fps (small error wave after 80 segments)
+realtime_lole 3.7fps (5fps at the start - fps decreasing rapidly - breaks down after a few segments)

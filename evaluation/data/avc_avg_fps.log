@@ -1,5 +1,5 @@
 ultrafast_rec 51fps
 ultrafast_lole 51fps
 ultrafast_rec_error 51fps
-medium_rec 14fps
-verslow_rec 4.6fps
+medium_rec 25fps (error heavy transcoding process but highest fps rate and longest duration before breakdown) 
+verslow_rec 4.5fps (extremly short transcoding period with extremly low fps rate before breakdown)

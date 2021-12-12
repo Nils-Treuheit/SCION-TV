@@ -1,18 +1,30 @@
-total 141
-drwxrwxrwx 1 vagrant vagrant 40960 Dec  5 22:32 .
-drwxrwxrwx 1 vagrant vagrant  4096 Nov 22 00:03 ..
--rwxrwxrwx 1 vagrant vagrant    26 Nov  9 15:57 .gitignore
--rwxrwxrwx 1 vagrant vagrant  1236 Dec  5 22:32 init.mp4
--rwxrwxrwx 1 vagrant vagrant   131 Dec  5 22:32 playlist.m3u8
--rwxrwxrwx 1 vagrant vagrant 90208 Dec  5 22:32 segment_0.m4s
--rwxrwxrwx 1 vagrant vagrant     0 Dec  5 22:32 segment_1.m4s
-total 777
-drwxrwxrwx 1 vagrant vagrant  40960 Dec  5 22:34 .
+total 193
+drwxrwxrwx 1 vagrant vagrant  40960 Dec  7 13:57 .
 drwxrwxrwx 1 vagrant vagrant   4096 Nov 22 00:03 ..
 -rwxrwxrwx 1 vagrant vagrant     26 Nov  9 15:57 .gitignore
--rwxrwxrwx 1 vagrant vagrant   1236 Dec  5 22:32 init.mp4
--rwxrwxrwx 1 vagrant vagrant    195 Dec  5 22:34 playlist.m3u8
--rwxrwxrwx 1 vagrant vagrant  90208 Dec  5 22:32 segment_0.m4s
--rwxrwxrwx 1 vagrant vagrant 359756 Dec  5 22:33 segment_1.m4s
--rwxrwxrwx 1 vagrant vagrant 290543 Dec  5 22:34 segment_2.m4s
--rwxrwxrwx 1 vagrant vagrant      0 Dec  5 22:34 segment_3.m4s
+-rwxrwxrwx 1 vagrant vagrant   1236 Dec  7 13:56 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    131 Dec  7 13:57 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 146818 Dec  7 13:57 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 296623 Dec  7 13:58 segment_1.m4s
+total 485
+drwxrwxrwx 1 vagrant vagrant  40960 Dec  7 13:58 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1236 Dec  7 13:56 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    163 Dec  7 13:58 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 146818 Dec  7 13:57 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 296623 Dec  7 13:58 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 316266 Dec  7 13:59 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant 329929 Dec  7 13:51 segment_3.m4s
+total 797
+drwxrwxrwx 1 vagrant vagrant  40960 Dec  7 13:59 .
+drwxrwxrwx 1 vagrant vagrant   4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant     26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant   1236 Dec  7 13:56 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    195 Dec  7 13:59 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 146818 Dec  7 13:57 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 296623 Dec  7 13:58 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 316266 Dec  7 13:59 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant 329929 Dec  7 13:51 segment_3.m4s
+-rwxrwxrwx 1 vagrant vagrant 359756 Dec  5 22:33 segment_4.m4s
+-rwxrwxrwx 1 vagrant vagrant 290543 Dec  5 22:34 segment_5.m4s

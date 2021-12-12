@@ -1,0 +1,37 @@
+total 49
+drwxrwxrwx 1 vagrant vagrant 40960 Dec  8 01:00 .
+drwxrwxrwx 1 vagrant vagrant  4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant    26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant  1269 Dec  8 01:00 init.mp4
+-rwxrwxrwx 1 vagrant vagrant    73 Dec  8 01:00 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant     0 Dec  8 01:00 segment_0.mp4
+total 6941
+drwxrwxrwx 1 vagrant vagrant   40960 Dec  8 01:01 .
+drwxrwxrwx 1 vagrant vagrant    4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant      26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant    1269 Dec  8 01:00 init.mp4
+-rwxrwxrwx 1 vagrant vagrant     131 Dec  8 01:01 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 7056022 Dec  8 01:01 segment_0.mp4
+-rwxrwxrwx 1 vagrant vagrant       0 Dec  8 01:01 segment_1.mp4
+total 19925
+drwxrwxrwx 1 vagrant vagrant   40960 Dec  8 01:03 .
+drwxrwxrwx 1 vagrant vagrant    4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant      26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant    1269 Dec  8 01:00 init.mp4
+-rwxrwxrwx 1 vagrant vagrant     195 Dec  8 01:03 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 7056022 Dec  8 01:01 segment_0.mp4
+-rwxrwxrwx 1 vagrant vagrant 6915456 Dec  8 01:02 segment_1.mp4
+-rwxrwxrwx 1 vagrant vagrant 6375662 Dec  8 01:03 segment_2.mp4
+-rwxrwxrwx 1 vagrant vagrant       0 Dec  8 01:03 segment_3.mp4
+total 31817
+drwxrwxrwx 1 vagrant vagrant   40960 Dec  8 01:05 .
+drwxrwxrwx 1 vagrant vagrant    4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant      26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant    1269 Dec  8 01:00 init.mp4
+-rwxrwxrwx 1 vagrant vagrant     259 Dec  8 01:05 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 7056022 Dec  8 01:01 segment_0.mp4
+-rwxrwxrwx 1 vagrant vagrant 6915456 Dec  8 01:02 segment_1.mp4
+-rwxrwxrwx 1 vagrant vagrant 6375662 Dec  8 01:03 segment_2.mp4
+-rwxrwxrwx 1 vagrant vagrant 5746467 Dec  8 01:04 segment_3.mp4
+-rwxrwxrwx 1 vagrant vagrant 6428016 Dec  8 01:05 segment_4.mp4
+-rwxrwxrwx 1 vagrant vagrant       0 Dec  8 01:05 segment_5.mp4
