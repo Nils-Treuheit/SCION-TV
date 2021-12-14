@@ -1,0 +1,15 @@
+error_rec_realtime
+avg_perf 50 fps
+avg_load 47.77745664739884 %
+trans_avg 56.31182795698925 %
+avg_size 0.4466627542372883 MB
+lole_realtime
+avg_perf 3.7 fps
+avg_load 70.14468085106382 %
+trans_avg 82.61682242990655 %
+avg_size 0.2899891666666667 MB
+rec_realtime
+avg_perf 48 fps
+avg_load 50.42662116040955 %
+trans_avg 58.77536231884058 %
+avg_size 0.4541440000000001 MB

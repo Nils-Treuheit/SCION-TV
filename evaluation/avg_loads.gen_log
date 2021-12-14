@@ -1,0 +1,30 @@
+data_collection\error_rec_realtime_vp9_perf.log
+avg_load 47.77745664739884 %
+trans_avg 56.31182795698925 %
+data_collection\error_rec_ultrafast_avc_perf.log
+avg_load 32.41633199464525 %
+trans_avg 41.40672782874618 %
+data_collection\lole_realtime_vp9_perf.log
+avg_load 70.14468085106382 %
+trans_avg 82.61682242990655 %
+data_collection\lole_ultrafast_avc_perf.log
+avg_load 53.84172661870504 %
+trans_avg 58.56640625 %
+data_collection\lole_ultrafast_hevc_perf.log
+avg_load 93.0 %
+trans_avg 97.88135593220339 %
+data_collection\medium_avc_perf.log
+avg_load 66.98058252427184 %
+trans_avg 74.19354838709677 %
+data_collection\rec_realtime_vp9_perf.log
+avg_load 50.42662116040955 %
+trans_avg 58.77536231884058 %
+data_collection\rec_ultrafast_avc_perf.log
+avg_load 33.16135458167331 %
+trans_avg 41.794642857142854 %
+data_collection\rec_ultrafast_hevc_perf.log
+avg_load 91.97576736672052 %
+trans_avg 96.96694214876032 %
+data_collection\veryslow_avc_perf.log
+avg_load 75.44692737430168 %
+trans_avg 83.82978723404256 %

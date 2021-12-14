@@ -1,0 +1,25 @@
+ultrafast_rec 
+avg_perf 51 fps
+avg_load 33.16135458167331 %
+trans_avg 41.794642857142854 %
+avg_size 7.765385202702704 MB
+ultrafast_lole 
+avg_perf 51 fps
+avg_load 53.84172661870504 %
+trans_avg 58.56640625 %
+avg_size 116.97324042452833 MB
+error_ultrafast_rec
+avg_perf 51 fps
+avg_load 32.41633199464525 %
+trans_avg 41.40672782874618 %
+avg_size 8.656425623188403 MB
+medium_rec 
+avg_perf 25 fps
+avg_load 66.98058252427184 %
+trans_avg 74.19354838709677 %
+avg_size 3.4375583181818183 MB
+verslow_rec 
+avg_perf 4.5 fps
+avg_load 75.44692737430168 %
+trans_avg 83.82978723404256 %
+avg_size 6.1329720000000005 MB

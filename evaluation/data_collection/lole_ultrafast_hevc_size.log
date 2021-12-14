@@ -1,0 +1,30 @@
+total 119889
+drwxrwxrwx 1 vagrant vagrant    40960 Dec 14  2021 .
+drwxrwxrwx 1 vagrant vagrant     4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant       26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant     3168 Dec 14  2021 init.mp4
+-rwxrwxrwx 1 vagrant vagrant      195 Dec 14  2021 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 35360778 Dec 14  2021 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 43919436 Dec 14  2021 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 43427221 Dec 14  2021 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant        0 Dec 14  2021 segment_3.m4s
+total 527474
+drwxrwxrwx 1 vagrant vagrant    40960 Dec 14  2021 .
+drwxrwxrwx 1 vagrant vagrant     4096 Nov 22 00:03 ..
+-rwxrwxrwx 1 vagrant vagrant       26 Nov  9 15:57 .gitignore
+-rwxrwxrwx 1 vagrant vagrant     3168 Dec 14  2021 init.mp4
+-rwxrwxrwx 1 vagrant vagrant      521 Dec 14  2021 playlist.m3u8
+-rwxrwxrwx 1 vagrant vagrant 35360778 Dec 14  2021 segment_0.m4s
+-rwxrwxrwx 1 vagrant vagrant 43919436 Dec 14  2021 segment_1.m4s
+-rwxrwxrwx 1 vagrant vagrant 36149073 Dec 14  2021 segment_10.m4s
+-rwxrwxrwx 1 vagrant vagrant 83951055 Dec 14  2021 segment_11.m4s
+-rwxrwxrwx 1 vagrant vagrant 38301941 Dec 14  2021 segment_12.m4s
+-rwxrwxrwx 1 vagrant vagrant 67541867 Dec 14  2021 segment_13.m4s
+-rwxrwxrwx 1 vagrant vagrant 43427221 Dec 14  2021 segment_2.m4s
+-rwxrwxrwx 1 vagrant vagrant 41760894 Dec 14  2021 segment_3.m4s
+-rwxrwxrwx 1 vagrant vagrant 27438963 Dec 14  2021 segment_4.m4s
+-rwxrwxrwx 1 vagrant vagrant 24684349 Dec 14  2021 segment_5.m4s
+-rwxrwxrwx 1 vagrant vagrant 53750065 Dec 14  2021 segment_6.m4s
+-rwxrwxrwx 1 vagrant vagrant 40070342 Dec 14  2021 segment_7.m4s
+-rwxrwxrwx 1 vagrant vagrant 36123680 Dec 14  2021 segment_8.m4s
+-rwxrwxrwx 1 vagrant vagrant 35116682 Dec 14  2021 segment_9.m4s

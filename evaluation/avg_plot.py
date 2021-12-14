@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mlpat
 from mpl_toolkits.mplot3d import Axes3D
 
-files = glob("first_run_data/avg_*.gen_log")
+files = glob("data_collection/avg_*.gen_log")
 
 keys,active_loads,loads,perfs,sizes = ([],[],[],[],[])
 for filename in files:

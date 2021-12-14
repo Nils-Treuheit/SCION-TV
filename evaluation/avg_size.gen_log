@@ -1,0 +1,20 @@
+data_collection\error_rec_realtime_vp9_size.log
+avg_size 0.4466627542372883 MB
+data_collection\error_rec_ultrafast_avc_size.log
+avg_size 8.656425623188403 MB
+data_collection\lole_realtime_vp9_size.log
+avg_size 0.2899891666666667 MB
+data_collection\lole_ultrafast_avc_size.log
+avg_size 116.97324042452833 MB
+data_collection\lole_ultrafast_hevc_size.log
+avg_size 43.399739000000004 MB
+data_collection\medium_avc_size.log
+avg_size 3.4375583181818183 MB
+data_collection\rec_realtime_vp9_size.log
+avg_size 0.4541440000000001 MB
+data_collection\rec_ultrafast_avc_size.log
+avg_size 7.765385202702704 MB
+data_collection\rec_ultrafast_hevc_size.log
+avg_size 1.4542663495145622 MB
+data_collection\veryslow_avc_size.log
+avg_size 6.1329720000000005 MB

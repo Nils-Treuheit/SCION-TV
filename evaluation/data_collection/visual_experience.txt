@@ -7,6 +7,6 @@ avc looseless - not watchable
 avc ultrafast - nearly indistinguishable from original stream, sometimes tiny bit less sharp, very stable
 avc medium - nearly indistinguishable from avc ultrafast, stream started and ended in fragments, not realtime nor stable
 avc verslow - slightly worse, visible difference, better than vp9 looseless, stream started and ended in fragments, not realtime nor stable
-hevc looseless - 
-hevc ultrafast - 
+hevc looseless - best video quality, basically indistinguishable from original stream but not realtime capable 
+hevc ultrafast - almost same as avc ultrafast but some artefacts and not as stable for realtime transcoding as avc
   
