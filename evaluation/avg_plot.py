@@ -1,10 +1,14 @@
 from glob import glob
 import math, numpy as np
+from os import getcwd
+from sys import argv
 import matplotlib.pyplot as plt
 import matplotlib.patches as mlpat
 from mpl_toolkits.mplot3d import Axes3D
 
-files = glob("data_collection/avg_*.gen_log")
+path = argv[0].strip("\\avg_plot.py")+"/data_collection/"
+files = glob(path+"avg_*.gen_log")
+print(path)
 
 keys,active_loads,loads,perfs,sizes = ([],[],[],[],[])
 for filename in files:
@@ -28,11 +32,11 @@ avg_load = (sum(loads)+sum(active_loads))/(len(loads)+len(active_loads))
 avg_size = sum(sizes)/len(sizes)
 avg_perf = sum(perfs)/len(perfs)
 load_ticks = [*range(0,101,10)]
-size_ticks = [0,1,*range(5,math.ceil(max(sizes)+2),10)]
-size_labels = [0,"",*range(5,math.ceil(max(sizes)+2),10)]
+size_ticks = [0,1,*range(5,math.ceil(max(sizes)+max(sizes)/8+10),10)]
+size_labels = [0,"\n    1",*range(5,math.ceil(max(sizes)+max(sizes)/8+10),10)]
 perf_ticks = sorted([*range(0,71,10),55,45,75])
 perf_labels = [*range(0,50,10),"",50,"",60,"",75]
-colors = ["tab:blue","tab:cyan","tab:red","tab:orange","tab:green","tab:olive","tab:purple","tab:pink","tab:brown","tab:grey"]
+colors = ["cornflowerblue","tab:blue","mediumslateblue","deepskyblue","aqua","tab:red","tab:orange","tab:green","tab:olive","lime","violet","hotpink","tab:brown","tab:grey"]
 #cmaps = ["Blues","cool","Reds","Oranges","Greens","summer","Purples","spring","copper","Greys"]
 
 plt.figure(0)
@@ -114,6 +118,6 @@ ax.set_xlabel("AVG Perforance(fps)")
 ax.set_yticks(size_ticks,size_labels)
 ax.set_zticks(load_ticks)
 ax.set_xticks(perf_ticks,perf_labels)
-plt.legend(handles=legend)
+plt.legend(handles=legend,loc='center right',bbox_to_anchor=(0.3, 0.8))
 
 plt.show()
