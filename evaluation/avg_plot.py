@@ -33,7 +33,7 @@ avg_size = sum(sizes)/len(sizes)
 avg_perf = sum(perfs)/len(perfs)
 load_ticks = [*range(0,101,10)]
 size_ticks = [0,1,*range(5,math.ceil(max(sizes)+max(sizes)/8+10),10)]
-size_labels = [0,"\n    1",*range(5,math.ceil(max(sizes)+max(sizes)/8+10),10)]
+size_labels = [0,"1   \n",*range(5,math.ceil(max(sizes)+max(sizes)/8+10),10)]
 perf_ticks = sorted([*range(0,71,10),55,45,75])
 perf_labels = [*range(0,50,10),"",50,"",60,"",75]
 colors = ["cornflowerblue","tab:blue","mediumslateblue","deepskyblue","aqua","tab:red","tab:orange","tab:green","tab:olive","lime","violet","hotpink","tab:brown","tab:grey"]
@@ -57,6 +57,7 @@ plt.xlabel("AVG Load(%)")
 plt.yticks(size_ticks,size_labels)
 plt.xticks(load_ticks)
 plt.legend(handles=legend)
+plt.subplots_adjust(left=0.075,bottom=0.075,top=0.97,right=0.97)
 
 plt.figure(1)
 legend = []
@@ -76,6 +77,7 @@ plt.xlabel("AVG Load(%)")
 plt.yticks(perf_ticks,perf_labels)
 plt.xticks(load_ticks)
 plt.legend(handles=legend)
+plt.subplots_adjust(left=0.075,bottom=0.075,top=0.97,right=0.97)
 
 plt.figure(2)
 legend = []
@@ -93,9 +95,11 @@ plt.xlabel("AVG Perforance(fps)")
 plt.yticks(size_ticks,size_labels)
 plt.xticks(perf_ticks,perf_labels)
 plt.legend(handles=legend)
+plt.subplots_adjust(left=0.075,bottom=0.075,top=0.97,right=0.97)
 
 fig = plt.figure(3)
 ax = plt.axes(projection='3d')
+size_labels[1] = "\n     1"
 legend = []
 for idx in range(len(keys)):
     x,y,z = (np.arange(perfs[idx]-perfs[idx]/8,perfs[idx]+perfs[idx]/8,((perfs[idx]+perfs[idx]/8)-(perfs[idx]-perfs[idx]/8))/20),
