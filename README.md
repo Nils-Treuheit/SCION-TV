@@ -92,6 +92,15 @@ sudo apt install golang-1.16
 If you mirrored my setup you will find your go application under <code>/usr/lib/go-1.16/bin</code>
 </br></br>
 
+## Used Hardware
+The evaluation data, that is referenced in the [report](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Nils-Treuheit/SCION-Web-Streaming-Report/main/scion-video_streaming_report.pdf?token=GHSAT0AAAAAABS5KE4H6X4WDIAAZOVQWPZ6YSI2LLQ) can be found in the [data_collection folder](evaluation/data_collection). This data was collected in latest test runs, where I used my [Ultrabook from Razer](https://www.razer.com/de-de/gaming-laptops/Razer-Book/RZ09-0357MGM2-R3G1) as a client machine. <br>
+My machine has the following technical specifications:<br>
+-> CPU: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz<br>
+-> GPU: Intel(R) Iris(R) Xe Graphics (integrated)<br>
+-> RAM: 16,0 GB 4267MHz<br>
+-> SSD: SSSTC CA5 M.2 2280 256GB<br>
+The VM was configured to use all 4 CPU cores and 4 GB of RAM while reserving about 40 GB of the SSD's capacity.<br><br> 
+
 ## Used Rescources:</br>
 The Website uses a picture created by adapting these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
 The Website was created using [this guide](https://videojs.com/getting-started/) from Video JS as a baseline.</br>
