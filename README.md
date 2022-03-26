@@ -1,5 +1,5 @@
 # SCION-TV</br>
-***This project enables TV-Webstreaming over the SCION-Network***</br>
+***This project enables video streaming inside a browser for a TV broadcast over the SCION-Network.<br>You can find the report of my project [here]((https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Nils-Treuheit/SCION-Web-Streaming-Report/main/scion-video_streaming_report.pdf?token=GHSAT0AAAAAABS5KE4H6X4WDIAAZOVQWPZ6YSI2LLQ)).***</br>
 </br>
 
 ## Project-Overview:</br>
@@ -17,7 +17,7 @@ Helper Scripts:</br>
 ----------------</br>
 <i>[remove_old_segments.py](remove_old_segments.py)   </i>  <strong>-></strong> time based maintainace script to remove segment files that will not be used anymore </br>
 <i>[webpage_generator.py](webpage_generator.py) &nbsp; &nbsp;   </i>  <strong>-></strong> build script to modify the website file according to network setup </br>
-<i>remove_old_segments.py & [perf.sh](evaluation/perf.sh)</i>  <strong>-></strong> are used for collecting evaluation data</br></br>
+<i>[remove_old_segments.py](remove_old_segments.py) & [perf.sh](evaluation/perf.sh)</i>  <strong>-></strong> are also used for collecting evaluation data</br></br>
 
 
 Website:</br>
@@ -93,7 +93,7 @@ If you mirrored my setup you will find your go application under <code>/usr/lib/
 </br></br>
 
 ## Used Rescources:</br>
-The Website uses a picture creation made from these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
+The Website uses a picture created by adapting these two pictures: [Picture 1](https://www.theatlantic.com/science/archive/2021/03/black-hole-cygnus-suprise/618049/), [Picture 2](https://www.flaticon.com/de/kostenloses-icon/wiedergabetaste_375?term=play%20taste&page=1&position=2&page=1&position=2&related_id=375&origin=tag)</br>
 The Website was created using [this guide](https://videojs.com/getting-started/) from Video JS as a baseline.</br>
 At the moment Video JS sadly only properly supports one of our encoding formats, which is [advanced video coding(avc)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or better known as H.264. An overview of supported encoding and stream formats can be found [here](https://github.com/videojs/http-streaming/blob/main/docs/supported-features.md).</br></br>
 
