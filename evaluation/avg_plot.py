@@ -10,22 +10,26 @@ path = argv[0].strip("\\avg_plot.py")+"/data_collection/"
 files = glob(path+"avg_*.gen_log")
 print(path)
 
-keys,active_loads,loads,perfs,sizes = ([],[],[],[],[])
+keys,active_loads,loads,std_loads,perfs,sizes,std_sizes = ([],[],[],[],[],[],[])
 for filename in files:
     enc_format = (filename.split(".")[0].split("_")[-1])
     file = open(filename,"r")
     lines = file.readlines()
     for line_count,line in enumerate(lines):
-        if line_count%5==0: 
+        if line_count%7==0: 
             keys.append((enc_format + "_" +line.strip()))
-        elif line_count%5==1:
+        elif line_count%7==1:
             perfs.append(float(line.split(" ")[1]))
-        elif line_count%5==2:     
+        elif line_count%7==2:     
             active_loads.append(float(line.split(" ")[1]))
-        elif line_count%5==3:     
+        elif line_count%7==3:     
             loads.append(float(line.split(" ")[1]))
-        elif line_count%5==4:     
+        elif line_count%7==4:     
+            std_loads.append(float(line.split(" ")[1]))    
+        elif line_count%7==5:     
             sizes.append(float(line.split(" ")[1]))
+        elif line_count%7==6:     
+            std_sizes.append(float(line.split(" ")[1]))
     file.close()
 
 avg_load = (sum(loads)+sum(active_loads))/(len(loads)+len(active_loads))
@@ -91,7 +95,7 @@ for idx in range(len(keys)):
     patch = mlpat.Patch(color=colors[idx], label=keys[idx])
     legend.append(patch)
 plt.ylabel("AVG Size(MB)")
-plt.xlabel("AVG Perforance(fps)")
+plt.xlabel("AVG Performance(fps)")
 plt.yticks(size_ticks,size_labels)
 plt.xticks(perf_ticks,perf_labels)
 plt.legend(handles=legend)
@@ -102,9 +106,9 @@ ax = plt.axes(projection='3d')
 size_labels[1] = "\n     1"
 legend = []
 for idx in range(len(keys)):
-    x,y,z = (np.arange(perfs[idx]-perfs[idx]/8,perfs[idx]+perfs[idx]/8,((perfs[idx]+perfs[idx]/8)-(perfs[idx]-perfs[idx]/8))/20),
-             np.arange(sizes[idx]-sizes[idx]/8,sizes[idx]+sizes[idx]/8,((sizes[idx]+sizes[idx]/8)-(sizes[idx]-sizes[idx]/8))/20),
-             np.arange(loads[idx],active_loads[idx]*2-loads[idx],(active_loads[idx]*2-loads[idx]*2)/20))
+    x,y,z = (np.arange(max(perfs[idx]-4,0),perfs[idx]+4,((perfs[idx]+4)-max(perfs[idx]-4,0))/20),
+             np.arange(max(sizes[idx]-std_sizes[idx]/2,0),sizes[idx]+std_sizes[idx]/2,((sizes[idx]+std_sizes[idx]/2)-max(sizes[idx]-std_sizes[idx]/2,0))/20),
+             np.arange(max(loads[idx]-std_loads[idx],0),min(active_loads[idx]+std_loads[idx],100),(min(active_loads[idx]+std_loads[idx],100)-max(loads[idx]-std_loads[idx],0))/20))
     x = np.hstack((x,np.flip(x),x,np.flip(x),x,np.flip(x),x,np.flip(x)))
     y = np.hstack((y,y,np.flip(y),np.flip(y),y,y,np.flip(y),np.flip(y)))
     z = np.hstack((z,z,z,z,np.flip(z),np.flip(z),np.flip(z),np.flip(z)))
@@ -118,10 +122,11 @@ for idx in range(len(keys)):
 
 ax.set_ylabel("AVG Size(MB)")
 ax.set_zlabel("AVG Load(%)")
-ax.set_xlabel("AVG Perforance(fps)")
+ax.set_xlabel("AVG Performance(fps)")
 ax.set_yticks(size_ticks,size_labels)
 ax.set_zticks(load_ticks)
 ax.set_xticks(perf_ticks,perf_labels)
 plt.legend(handles=legend,loc='center right',bbox_to_anchor=(0.3, 0.8))
+plt.subplots_adjust(left=0.0,bottom=0.0,top=1,right=1)
 
 plt.show()

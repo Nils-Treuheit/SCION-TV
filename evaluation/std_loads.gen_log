@@ -1,0 +1,20 @@
+data_collection\error_rec_realtime_vp9_perf.log
+std 9.180883658190554 %
+data_collection\error_rec_ultrafast_avc_perf.log
+std 9.811170364533892 %
+data_collection\lole_realtime_vp9_perf.log
+std 14.058401115326754 %
+data_collection\lole_ultrafast_avc_perf.log
+std 8.627872122054155 %
+data_collection\lole_ultrafast_hevc_perf.log
+std 12.806248474865697 %
+data_collection\medium_avc_perf.log
+std 11.17380829859163 %
+data_collection\rec_realtime_vp9_perf.log
+std 9.595518072607469 %
+data_collection\rec_ultrafast_avc_perf.log
+std 9.592278837927447 %
+data_collection\rec_ultrafast_hevc_perf.log
+std 10.975861053471217 %
+data_collection\veryslow_avc_perf.log
+std 11.45656012460024 %
