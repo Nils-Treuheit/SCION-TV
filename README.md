@@ -1,5 +1,5 @@
 # SCION-TV</br>
-***This project enables video streaming inside a browser for a TV broadcast over the SCION-Network.<br>You can find the report of my project [here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Nils-Treuheit/SCION-Web-Streaming-Report/main/scion-video_streaming_report.pdf?token=GHSAT0AAAAAABS5KE4H53JSO5GTI6LWR5U6YS5XBWA).***</br>
+***This project enables video streaming inside a browser for a TV broadcast over the SCION-Network.<br>You can find the report of my project [here](https://github.com/Nils-Treuheit/SCION-Web-Streaming-Report/blob/main/scion-video_streaming_report.pdf).***</br>
 </br>
 
 ## Project-Overview:</br>
